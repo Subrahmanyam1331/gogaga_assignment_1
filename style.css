@@ -1,0 +1,385 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    min-height:65vh;
+    background-image:url("back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+.logo-image{
+    width:150px;
+    height: 95px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+nav ul{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 80px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+    color:#333;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width:250px;
+    z-index:999;
+    backdrop-filter:blur(10px);
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.icon{
+    padding-left:10px ;
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width:100%;
+}
+
+.menu-icon{
+    display: block;
+}
+
+.inner-icons{
+    border: 1px solid grey;
+    border-radius: 50px;
+    width: 80px;
+    height:45px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:10px ;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+.main-heading{
+    color:white;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.description{
+    color:white;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; 
+    padding-bottom: 20px;
+}
+
+.search-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .tab {
+    color: #333;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #333;
+    color: white;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding:10px;
+    width: 100%;
+    gap:15px;
+    flex: 1;
+  }
+  
+  .input-group {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding:10px;
+  }
+
+  .container {
+    border: 1px solid grey;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    gap:10px;
+    max-width: 400px; 
+    flex: 1.5;
+    box-sizing: border-box;
+  }
+  
+  .date-input{
+    padding: 8px;
+    width: 100%;
+    font-size: 14px; 
+    border: 1px solid lightgray; 
+    border-radius: 5px;
+    outline: none; 
+    border: none;
+    background:transparent;
+    box-sizing: border-box; 
+  }
+
+  .date-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%; 
+    margin-right: 10px;
+    width: calc(33.33% - 10px);
+    margin-right:0px;
+    flex: 1;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    padding-right:50px ;
+    width: 100%;
+    white-space: nowrap; /* Prevent the label text from wrapping to a new line */
+    font-size: 14px;
+  }
+  
+
+  
+  .input-field, .dropdown {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-size: 16px;
+    border: none;
+    outline: none; 
+    box-sizing: border-box;
+  }
+  
+
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+  
+  .search-button {
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+
+  .rating-heading{
+    color:black;
+    font-size: 18px;
+  }
+
+ 
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  .rating-star {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .rating-star.active {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+  
+
+
+
+
+
+@media (max-width:768px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+}
+
+
+
+@media (max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+@media (max-width:1200px){
+    .inner-icons{
+        border: 1px solid grey;
+        border-radius: 50px;
+        width: 70px;
+        height:30px;
+        display: flex;
+        justify-content:space-between;
+        padding:10px ;
+    }
+}
+
+@media (max-width: 768px) {
+    .date-group {
+        flex: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+  .input-container {
+      gap: 10px;
+  }
+
+  .input-group, .container {
+      flex: 1;
+      width: 100%;
+  }
+
+  .container {
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .date-block {
+      width: 48%;
+      margin-bottom: 10px;
+  }
+
+  label {
+      font-size: 12px;
+  }
+
+  .date-input, .input-field, select {
+      font-size: 12px;
+      padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-container {
+      flex-direction: column;
+      gap: 10px;
+      padding: 5px;
+  }
+
+  .input-group, .container {
+      width: 100%;
+      padding: 8px;
+  }
+
+  .date-block {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .date-input, .input-field, select {
+      font-size: 12px;
+      padding: 6px;
+  }
+
+  label {
+      font-size: 12px;
+      text-align: left;
+      width: 100%;
+  }
+}

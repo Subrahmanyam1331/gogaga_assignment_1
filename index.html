@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogaga</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/41540657b5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" width="26" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Gift cards</a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><img class="logo-image" src="gogaga_logo.png"/></a></li>
+            <li class="hideOnMobile"><a href="#">Packages</a></li>
+            <li class="hideOnMobile"><a href="#">Tours</a></li>
+            <li class="hideOnMobile"><a href="#">Help</a></li>
+            <li class="hideOnMobile"><a href="#">Membership <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="icon" viewBox="0 0 512 512"><path d="M116.7 33.8c4.5-6.1 11.7-9.8 19.3-9.8l240 0c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152zm38.5 39.8c-3.3 2.5-4.2 7-2.1 10.5l57.4 95.6L63.3 192c-4.1 .3-7.3 3.8-7.3 8s3.2 7.6 7.3 8l192 16c.4 0 .9 0 1.3 0l192-16c4.1-.3 7.3-3.8 7.3-8s-3.2-7.6-7.3-8L301.5 179.8l57.4-95.6c2.1-3.5 1.2-8.1-2.1-10.5s-7.9-2-10.7 1L256 172.2 165.9 74.6c-2.8-3-7.4-3.4-10.7-1z"/></svg></a></li>
+            <li class="hideOnMobile"><a href="#">Gift cards <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="icon" viewBox="0 0 512 512"><path d="M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z"/></svg></a></li>
+            <li class="menu-icon" onclick=showSidebar()>
+            <a href="#">
+                <div class="inner-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                </svg>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <h1 class="main-heading">Discover Your Next Adventure</h1>
+        <p class="description">Unlock your path to adventure, and start your journey of discovery-where every destination awaits your exploration</p>
+        <div class="search-card">
+            <div class="tab-container">
+              <button class="tab active">Packages</button>
+              <button class="tab">Tours</button>
+            </div>
+            
+            <div class="input-container col-md-12">
+              <div class="input-group">
+                <label for="cityname">Destination</label>
+                <input type="text" id="cityname" placeholder="Enter the City" class="input-field" />
+              </div>
+              <div class="container">
+                <div class="date-block">
+                  <label for="check-in">Check-in</label>
+                  <input type="date" id="check-in" class="date-input">
+                </div>
+                <div class="date-block">
+                    <i class="fa-solid fa-moon"></i>
+                    <p class="night-heading">1 Night</p>
+                  </div>
+                <div class="date-block">
+                  <label for="check-out">Check-out</label>
+                  <input type="date" id="check-out" class="date-input">
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="people">Guests and Rooms</label>
+            <select id="people" name="people">
+                <option value="us">2adults,0children,1room</option>
+                <option value="ca">3adults,1children,1room</option>
+                <option value="uk">4adults,3children,2room</option>
+                <option value="au">8adults,10children,4room</option>
+                <option value="in">10adults,10children,5room</option>
+            </select>
+              </div>
+              <button class="search-button">
+                <i class="fa-solid fa-magnifying-glass fa-2x" style="color: white;"></i>
+              </button>
+            </div>
+            
+            <div class="rating">
+                <h1 class="rating-heading pt-2">Star Rating</h1>
+              <span class="rating-star active">3<i class="fa-regular fa-star fa-xs" style="color: white;"></i></span>
+              <span class="rating-star active">4<i class="fa-regular fa-star fa-xs" style="color: white;"></i></span>
+              <span class="rating-star">5<i class="fa-regular fa-star fa-xs"></i></span>
+            </div>
+          </div>
+          
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function closeSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
